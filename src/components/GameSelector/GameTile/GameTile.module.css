@@ -1,0 +1,17 @@
+.gameTile {
+  width: 90px;
+  height: 90px;
+  background: gray;
+  border: 1px solid dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameTile:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 85%;
+}

@@ -1,0 +1,23 @@
+.gameScreen {
+    display: block;
+    width: 100%;
+
+    color: #989797;
+}
+
+.csScreen {
+    transition: all 200ms ease;
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/cs_bg.jpg') top no-repeat fixed rgba(0,0,0,.8);
+    background-size: cover;
+}
+
+.hlScreen {
+    opacity: 1;
+    transition: .4s;
+
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/123.jpg') top no-repeat fixed rgba(0,0,0,.8);
+    background-size: cover;
+}
+
