@@ -1,23 +1,50 @@
-.gameScreen {
-    display: block;
+.gameScreenWrapper {
+    display: flex;
     width: 100%;
-
+    height: 100vh;
     color: #989797;
 }
 
+.title {
+    font-size: 7vw;
+    margin: 20px 80px 50px;
+}
+
+.infoSection {
+    width: 100%;
+}
+
 .csScreen {
-    transition: all 200ms ease;
+    transition: all 300ms ease;
     background-blend-mode: multiply;
-    background:url('../../assets/bg/cs_bg.jpg') top no-repeat fixed rgba(0,0,0,.8);
+    background:url('../../assets/bg/cs_bg.jpg') top no-repeat fixed rgba(0,0,0,.6);
     background-size: cover;
 }
 
 .hlScreen {
-    opacity: 1;
-    transition: .4s;
-
+    transition: all 300ms ease;
     background-blend-mode: multiply;
-    background:url('../../assets/bg/123.jpg') top no-repeat fixed rgba(0,0,0,.8);
+    background:url('../../assets/bg/hl_bg.jpg') top no-repeat fixed rgba(0,0,0,.6);
     background-size: cover;
 }
 
+.minecraftScreen {
+    transition: all 300ms ease;
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/minecraft_bg.jpeg') top no-repeat fixed rgba(0,0,0,.6);
+    background-size: cover;
+}
+
+.istarScreen {
+    transition: all 300ms ease;
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/istar_bg.jpg') top no-repeat fixed rgba(0,0,0,.6);
+    background-size: cover;
+}
+
+@media (orientation: portrait) {
+    .title {
+        font-size: 7vw;
+        margin: 1% 5% 5%;
+    }
+}

@@ -1,18 +1,22 @@
 import InfoSection from "./InfoSection/InfoSection";
 import styles from "./GameScreen.module.css";
-import {useState} from "react";
+import GameSelector from "./GameSelector/GameSelector";
 
 export default function GameScreen(props) {
-  const [activeScreen, setActiveScreen] = useState(styles.csScreen)
-  function click() {
-    setActiveScreen(styles.hlScreen)
-  }
+  let activeScreen;
+  if (props.screen === "CS") activeScreen = styles.csScreen;
+  if (props.screen === "Half-Life: Deathmatch") activeScreen = styles.hlScreen;
+  if (props.screen === "Minecraft") activeScreen = styles.minecraftScreen;
+  if (props.screen === "2Moons") activeScreen = styles.istarScreen;
 
-  return <div className={styles.gameScreen + " " + activeScreen}>
-    <h1>{props.screen}</h1>
-    <button onClick={click}>CHANGE SCREEN</button>
-    <div className={styles.about}>
-      <InfoSection />
+  return <>
+    <div className={styles.gameScreenWrapper + " " + activeScreen}>
+      <GameSelector games={props.games} changeScreen={props.setCurrentScreen} />
+      <div className={styles.infoSection}>
+        <p className={styles.title}>{props.screen}</p>
+        <InfoSection />
+      </div>
     </div>
-    </div>
+  </>
+
 }
