@@ -19,3 +19,7 @@ img:hover {
   transition: all 250ms ease;
   opacity: 1;
 }
+.active {
+  opacity: 1;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,6 @@
+.gameSelector {
+    display: flex;
+    margin-top: auto;
+    justify-content: center;
+    margin-bottom: 4px;
+}

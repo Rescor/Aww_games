@@ -1,5 +1,6 @@
 .gameScreenWrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
     color: #989797;
@@ -12,6 +13,20 @@
 
 .infoSection {
     width: 100%;
+}
+
+.legionScreen {
+    transition: all 300ms ease;
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/legion_bg.jpg') top no-repeat fixed rgba(0,0,0,.2);
+    background-size: cover;
+}
+
+.hubScreen {
+    transition: all 300ms ease;
+    background-blend-mode: multiply;
+    background:url('../../assets/bg/hub_bg.jpg') top no-repeat fixed rgba(0,0,0,.4);
+    background-size: cover;
 }
 
 .csScreen {
@@ -46,5 +61,12 @@
     .title {
         font-size: 7vw;
         margin: 1% 5% 5%;
+    }
+
+    .hubScreen {
+        transition: all 300ms ease;
+        background-blend-mode: multiply;
+        background:url('../../assets/bg/hub_portrait_bg.jpg') top no-repeat fixed rgba(0,0,0,.7);
+        background-size: cover;
     }
 }
