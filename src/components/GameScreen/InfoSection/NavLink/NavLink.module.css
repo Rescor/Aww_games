@@ -1,0 +1,14 @@
+.navLink {
+    display: inline-block;
+    height: 100%;
+    color: #ff8f1e;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: 0.5em 1.2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+}
+
