@@ -1,5 +1,5 @@
 .subtitle {
-    font-size: 2vw;
+    font-size: 4vh;
     margin: 15px 0 30px;
 }
 
@@ -10,8 +10,8 @@
     border-radius: 10px;
     margin-right: 20px;
 }
-.about {
-    font-size: 1.3vw;
+.description {
+    font-size: 2.2vh;
     color: #e35f0d;
 }
 
@@ -23,6 +23,6 @@
     margin-right: 40px;
 }
 
-.description {
+.about {
     margin-left: 80px
 }
