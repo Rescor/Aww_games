@@ -8,7 +8,7 @@
 
 .title {
     font-size: 7vw;
-    margin: 20px 80px 30px;
+    margin: 10px 80px 30px;
 }
 
 .infoSection {
@@ -25,7 +25,7 @@
 .hubScreen {
     transition: all 300ms ease;
     background-blend-mode: multiply;
-    background:url('../../assets/bg/hub_bg.jpg') top no-repeat fixed rgba(0,0,0,.4);
+    background:url('../../assets/bg/hub_bg.jpg') top no-repeat fixed rgba(0,0,0,.5);
     background-size: cover;
 }
 
