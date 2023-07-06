@@ -15,10 +15,12 @@ img {
   opacity: 0.4;
   width: 85%;
 }
+
 img:hover {
   transition: all 250ms ease;
   opacity: 1;
 }
+
 .active {
   opacity: 1;
   margin-bottom: 8px;

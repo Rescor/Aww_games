@@ -3,16 +3,12 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    color: #989797;
+    color: #b0b0b0;
 }
 
 .title {
     font-size: 7vw;
     margin: 10px 80px 30px;
-}
-
-.infoSection {
-    width: 100%;
 }
 
 .legionScreen {

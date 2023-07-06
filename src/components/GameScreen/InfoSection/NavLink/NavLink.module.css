@@ -6,12 +6,24 @@
     transition: all 400ms ease;
     border-bottom: 1px solid dodgerblue;
     padding: 0 1px;
-    font-size: 1.2vw;
+    font-size: 2.2vh;
 }
 
 .navLink:hover {
     color: #2b6cf8;
     border-bottom: 1px solid #2b6cf8;
     transition: all 200ms ease;
+}
 
+@media (orientation: portrait) {
+    .navLink {
+        display: block;
+        width: 95%;
+        font-size: 4vw;
+        text-align: center;
+        border: 1px solid dodgerblue;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
 }

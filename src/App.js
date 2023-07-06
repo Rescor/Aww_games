@@ -1,7 +1,5 @@
-import './App.css';
+import { useState } from "react";
 import GameScreen from "./components/GameScreen/GameScreen";
-import {useState} from "react";
-
 import hubLogo from "./assets/hub.png";
 import csLogo from "./assets/cs.png";
 import hlLogo from "./assets/hl.svg";
@@ -26,8 +24,7 @@ const games = [
     secondDescription: "Присоединяйтесь к нам! Мы рады новым людям =)"
   },
   {
-    name: "Minecraft",
-    realm: "",
+    name: "Энтропия",
     logo: minecraftLogo,
     address: "games.aww.xyz:25565",
     links: [
@@ -38,11 +35,12 @@ const games = [
     description: "Версия игры: 1.19.2 Java",
   },
   {
-    name: "World of Warcraft: Legion",
-    realm: "Ксеногенезис",
+    name: "Ксеногенезис",
     logo: wowLogo,
     address: "games.aww.xyz",
     links: [
+      {name: "Создать аккаунт", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
+      {name: "Гайд по подключению", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
       {name: "Чат", url: "https://t.me/xen_rp"},
       {name: "Форум", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
     ],
@@ -50,30 +48,41 @@ const games = [
     description: "Версия игры: 7.3.5 (build 26124)",
   },
   {
-    name: "CS",
-    logo: csLogo,
-    address: "games.aww.xyz:27015",
-    connection: "steam://connect/IP",
-    description: "",
-    chat: "https://t.me/hldmx",
-    forumUrl: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"
-  },
-  {
-    name: "Half-Life: Deathmatch",
+    name: "Интерлюдия",
     logo: hlLogo,
     address: "games.aww.xyz:27016",
-    connection: "steam://connect/IP",
-    description: "",
-    chat: "https://t.me/hldmx",
-    forumUrl: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"
+    links: [
+      {name: "Чат", url: "https://t.me/hldmx"},
+      {name: "Форум", url: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"},
+      {name: "Быстрое подключение (Steam)", url: "steam://connect/games.aww.xyz:27016"},
+    ],
+    subtitle: "Игровой сервер Half-Life: Deathmatch",
+    description: "Поддерживаются любые игровые клиенты.",
+    secondDescription: "Карты: crossfire, subtransit, bounce, datacore, rapidcore."
   },
   {
-    name: "2Moons",
+    name: "Искренность",
+    logo: csLogo,
+    address: "games.aww.xyz:27015",
+    links: [
+      {name: "Чат", url: "https://t.me/hldmx"},
+      {name: "Форум", url: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"},
+      {name: "Быстрое подключение (Steam)", url: "steam://connect/games.aww.xyz:27015"},
+    ],
+    subtitle: "Игровой сервер Counter-Strike: 1.6",
+    description: "Поддерживаются любые игровые клиенты.",
+    secondDescription: "Карты: cs_mansion, de_dust2, de_dust2_2x2, cs_assault, de_inferno, de_aztec, de_train, de_nuke, $2000$, fy_pool_day, aim_map.",
+  },
+  {
+    name: "Иштар",
     logo: istarLogo,
-    url: "https://istar.aww.xyz/",
+    links: [
+      {name: "Начать игру", url: "https://istar.aww.xyz/"},
+      {name: "Чат", url: "https://t.me/istarsx"},
+      {name: "Форум", url: "https://forum.netstalking.ru/index.php?/forum/48-2moons-istar/"},
+    ],
+    subtitle: "Игровой сервер браузерной игры 2Moons",
     description: "2Moons - это браузерная космическая стратегия в реальном времени.",
-    chat: "https://t.me/istarsx",
-    forumUrl: "https://forum.netstalking.ru/index.php?/forum/48-2moons-istar/"
   },
 ]
 
