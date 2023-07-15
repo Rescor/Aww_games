@@ -39,8 +39,8 @@ const games = [
     logo: wowLogo,
     address: "games.aww.xyz",
     links: [
-      {name: "Создать аккаунт", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
-      {name: "Гайд по подключению", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
+      {name: "Создать аккаунт", url: "https://t.me/xen_rp_bot"},
+      {name: "Гайд по подключению", url: "https://forum.netstalking.ru/index.php?/topic/408-как-начать-играть-гайд-по-подключению/"},
       {name: "Чат", url: "https://t.me/xen_rp"},
       {name: "Форум", url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
     ],
@@ -48,7 +48,7 @@ const games = [
     description: "Версия игры: 7.3.5 (build 26124)",
   },
   {
-    name: "Интерлюдия",
+    name: "Симург",
     logo: hlLogo,
     address: "games.aww.xyz:27016",
     links: [
@@ -61,7 +61,7 @@ const games = [
     secondDescription: "Карты: crossfire, subtransit, bounce, datacore, rapidcore."
   },
   {
-    name: "Искренность",
+    name: "Интерлюдия",
     logo: csLogo,
     address: "games.aww.xyz:27015",
     links: [

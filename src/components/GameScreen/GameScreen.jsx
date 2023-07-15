@@ -18,11 +18,11 @@ export default function GameScreen(props) {
     activeScreen = styles.legionScreen;
     activeGame = props.games[2];
   }
-  if (props.screen === "Интерлюдия") {
+  if (props.screen === "Симург") {
     activeScreen = styles.hlScreen;
     activeGame = props.games[3];
   }
-  if (props.screen === "Искренность") {
+  if (props.screen === "Интерлюдия") {
     activeScreen = styles.csScreen;
     activeGame = props.games[4];
   }
