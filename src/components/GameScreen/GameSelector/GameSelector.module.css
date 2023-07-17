@@ -4,10 +4,3 @@
     justify-content: center;
     margin-bottom: 4px;
 }
-
-/* Fix for mobile browsers interface */
-@media (orientation: portrait) {
-    .gameSelector {
-        margin-bottom: 60px;
-    }
-}
