@@ -57,7 +57,7 @@
 @media (orientation: portrait) {
     .title {
         font-size: 7vw;
-        margin: 1% 5% 5%;
+        margin: 5%;
     }
 
     .hubScreen {
