@@ -1,9 +1,10 @@
 import styles from "./InfoSection.module.css";
 import NavLink from "./NavLink/NavLink";
+import { t } from "i18next";
 
 export default function InfoSection(props) {
     let links = [];
-    let isWrapped = props.game.name === "Игровой хаб TLPE / 49406";
+    let isWrapped = props.game.id === "main";
 
     for (let link of props.game.links) {
         links.push(<NavLink href={link.url} text={link.name} key={link.name} />)
@@ -14,7 +15,7 @@ export default function InfoSection(props) {
                 <div className={isWrapped ? styles.wrapper : styles.secondaryWrapper}>
                     <p className={styles.subtitle}>{props.game.subtitle}<br />{props.game.secondSubtitle}</p>
                     <p className={styles.description}>{props.game.description}</p>
-                    {props.game.address && <p className={styles.description}>Адрес сервера: {props.game.address}</p>}
+                    {props.game.address && <p className={styles.description}>{t("server_address") + props.game.address}</p>}
                     {[...links]}
                     <p className={styles.description}>{props.game.secondDescription}</p>
                 </div>

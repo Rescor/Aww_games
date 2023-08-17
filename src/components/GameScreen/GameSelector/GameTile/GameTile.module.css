@@ -10,18 +10,18 @@
   cursor: pointer;
 }
 
-img {
+.gameTile img {
   transition: all 400ms ease;
   opacity: 0.4;
   width: 85%;
 }
 
-img:hover {
+.gameTile img:hover {
   transition: all 250ms ease;
   opacity: 1;
 }
 
-.active {
+.gameTile .active {
   opacity: 1;
   margin-bottom: 8px;
 }

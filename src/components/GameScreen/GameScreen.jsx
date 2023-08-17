@@ -6,27 +6,27 @@ export default function GameScreen(props) {
   let activeScreen;
   let activeGame;
   // TODO: Refactor this, replace screen styles in game objects, use game names as keys
-  if (props.screen === "Игровой хаб TLPE / 49406") {
+  if (props.screen === "main") {
     activeScreen = styles.hubScreen;
     activeGame = props.games[0];
   }
-  if (props.screen === "Энтропия") {
+  if (props.screen === "entropy") {
     activeScreen = styles.minecraftScreen;
     activeGame = props.games[1];
   }
-  if (props.screen === "Ксеногенезис") {
+  if (props.screen === "xenogenesis") {
     activeScreen = styles.legionScreen;
     activeGame = props.games[2];
   }
-  if (props.screen === "Симург") {
+  if (props.screen === "simurgh") {
     activeScreen = styles.hlScreen;
     activeGame = props.games[3];
   }
-  if (props.screen === "Интерлюдия") {
+  if (props.screen === "interlude") {
     activeScreen = styles.csScreen;
     activeGame = props.games[4];
   }
-  if (props.screen === "Иштар") {
+  if (props.screen === "istar") {
     activeScreen = styles.istarScreen;
     activeGame = props.games[5];
   }
