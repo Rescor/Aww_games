@@ -1,7 +1,7 @@
 .select_wrapper {
   position: absolute;
   right: 22px;
-  top: 22px;
+  bottom: 22px;
   background: rgba(17, 17, 17, 0.53);
   backdrop-filter: blur(7px);
   border-radius: 7px;
@@ -51,4 +51,19 @@
 
 .select::-ms-expand {
   display: none;
+}
+
+@media screen and (max-width: 930px) {
+  .select_wrapper {
+    top: 12px;
+    right: 12px;
+    bottom: unset;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .select_wrapper {
+    top: unset;
+    bottom: 75px;
+  }
 }
