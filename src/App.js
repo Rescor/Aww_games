@@ -22,8 +22,8 @@ function App() {
       links: [
         {name: t("hub.steam_link"), url: "https://steamcommunity.com/groups/tlpe/"},
         {name: t("hub.discord_link"), url: "https://discord.com/invite/kDygPTm"},
-        {name: "tlpe.ru", url: "https://tlpe.ru/"},
-        {name: "netstalking.ru", url: "https://netstalking.ru/"},
+        {name: "TLPE", url: "https://tulpamancy.org/"},
+        {name: "netstalking.org", url: "https://netstalking.org/"},
         {name: "aww.xyz", url: "https://aww.xyz/"},
       ],
       subtitle: t("hub.subtitle"),
@@ -38,7 +38,7 @@ function App() {
       address: "games.aww.xyz:25565",
       links: [
         {name: t("chat"), url: "https://t.me/+WpCDUGWMmZ8wZjA6"},
-        {name: t("forum"), url: "https://forum.netstalking.ru/index.php?/forum/47-minecraft/"},
+        {name: t("forum"), url: "https://forum.netstalking.org/index.php?/forum/47-minecraft/"},
       ],
       subtitle: t("entropy.subtitle"),
       description: t("entropy.description"),
@@ -50,9 +50,9 @@ function App() {
       address: "games.aww.xyz",
       links: [
         {name: t("create_acc"), url: "https://t.me/xen_rp_bot"},
-        {name: t("how_to_connect"), url: "https://forum.netstalking.ru/index.php?/topic/408-как-начать-играть-гайд-по-подключению/"},
+        {name: t("how_to_connect"), url: "https://forum.netstalking.org/index.php?/topic/408-как-начать-играть-гайд-по-подключению/"},
         {name: t("chat"), url: "https://t.me/xen_rp"},
-        {name: t("forum"), url: "https://forum.netstalking.ru/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
+        {name: t("forum"), url: "https://forum.netstalking.org/index.php?/forum/57-world-of-warcraft-legion-ксеногенезис/"},
       ],
       subtitle: t("xen.subtitle"),
       description: t("xen.description"),
@@ -64,7 +64,7 @@ function App() {
       address: "games.aww.xyz:27016",
       links: [
         {name: t("chat"), url: "https://t.me/hldmx"},
-        {name: t("forum"), url: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"},
+        {name: t("forum"), url: "https://forum.netstalking.org/index.php?/forum/45-half-life-cs-16/"},
         {name: t("steam_qc"), url: "steam://connect/games.aww.xyz:27016"},
       ],
       subtitle: t("simurgh.subtitle"),
@@ -78,7 +78,7 @@ function App() {
       address: "games.aww.xyz:27015",
       links: [
         {name: t("chat"), url: "https://t.me/hldmx"},
-        {name: t("forum"), url: "https://forum.netstalking.ru/index.php?/forum/45-half-life-cs-16/"},
+        {name: t("forum"), url: "https://forum.netstalking.org/index.php?/forum/45-half-life-cs-16/"},
         {name: t("steam_qc"), url: "steam://connect/games.aww.xyz:27015"},
       ],
       subtitle: t("interlude.subtitle"),
@@ -90,9 +90,9 @@ function App() {
       id: "istar",
       logo: istarLogo,
       links: [
-        {name: t("start_game"), url: "https://istar.aww.xyz/"},
+        {name: t("start_game"), url: "https://2moons.xyz/"},
         {name: t("chat"), url: "https://t.me/istarsx"},
-        {name: t("forum"), url: "https://forum.netstalking.ru/index.php?/forum/48-2moons-istar/"},
+        {name: t("forum"), url: "https://forum.netstalking.org/index.php?/forum/48-2moons-istar/"},
       ],
       subtitle: t("istar.subtitle"),
       description: t("istar.description"),
